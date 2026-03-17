@@ -1,0 +1,36 @@
+{
+  "name": "placemark",
+  "version": "0.4.0",
+  "description": "A Placemark application for the HDip in Computing, WIT",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "./node_modules/.bin/eslint . --ext .js",
+    "test": "./node_modules/mocha/bin/_mocha --ui tdd test/**.js -exit",
+    "dev": "./node_modules/.bin/nodemon  src/server.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/cookie": "^12.0.1",
+    "@hapi/hapi": "^21.4.4",
+    "@hapi/vision": "^7.0.3",
+    "dotenv": "^17.2.3",
+    "handlebars": "^4.7.8",
+    "joi": "^18.0.2",
+    "lowdb": "^7.0.1",
+    "mongoose": "^9.3.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "axios": "^1.13.6",
+    "chai": "^6.2.2",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "mocha": "^11.7.5",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  }
+}
